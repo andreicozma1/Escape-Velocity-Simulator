@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Escape The Planet - EF152</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="An Orbital Motion Simulator that teaches the Physics concept of escape velocity through a fun, interactive simulation. Final Project for EF152 by Andrei Cozma, Andrew Kloek, Marcus McCoy, and Refati Rusitanmu">
+    <meta name="keywords" content="Orbital Motion, Rocket, Gravitation, Space, Simulator, EF152, Schleter, Escape Velocity, UTK, HTML,CSS,JavaScript">
+    <meta name="author" content="Andrei Cozma">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    <!--<img id="menu" src="https://cdn4.iconfinder.com/data/icons/circles-1/32/364-01-512.png">-->
+    <noscript>
+        <h2 style="color:white;">This page requires JavaScript to run. Please enable JavaScript in your browser's
+            settings and refresh the page.</h2>
+    </noscript>
+    <div id="menu">
+        <div id="sliders">
+            <div>
+                <div><input type="range" class="slider" id="rad" min="1" max="15" oninput="updateStats()" step=".1"
+                        onchange="updateStats()">
+                    <div style="display:flex;">
+                        <p>P. Radius: </p>
+                        <p id="radText"></p>
+                    </div>
+                </div>
+                <div> <input type="range" class="slider" id="mass" min="1" max="15" oninput="updateStats()" step=".1"
+                        onchange="updateStats()">
+                    <div style="display:flex;">
+                        <p>P. Mass: </p>
+                        <p id="massText"></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+                <div><input type="range" class="slider" id="vel" min="0" max="50" oninput="updateStats()" step=".1"
+                        onchange="updateStats()">
+                    <div style="display:flex;">
+                        <p>Init Velocity: </p>
+                        <p id="velText"></p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div style="display: flex;">
+            <div> <input type="color" id="color" onchange="noParty()" value="#FFFFFF">
+            </div>
+            <div> <input type="button" class="button" id="secret" autocomplete="off" value="?" onclick="party()">
+
+            </div>
+            <div> <input type="button" class="button" id="reset" autocomplete="off" value="RESET"
+                    onclick="resetSettings()">
+
+            </div>
+            <div> <input type="button" class="button" id="info" autocomplete="off" value="INFO" onclick="showInfo()">
+
+            </div>
+        </div>
+        <div id="info">
+            <div>
+                <p>&#8226; P. Radius:</p>
+                <p id="radText1"></p>
+            </div>
+            <div>
+                <p>&#8226; P. Mass:</p>
+                <p id="massText1"></p>
+            </div>
+            <div>
+                <p>&#8226; Initial Vel:</p>
+                <p id="velText1"></p>
+            </div>
+            <div>
+                <p>&#8226; Current Vel:</p>
+                <p id="currVelText"></p>
+            </div>
+            <div>
+                <p>&#8226; Escape Vel:</p>
+                <p id="escapeVelText"></p>
+            </div>
+            <div>
+                <p>&#8226; Gravity:</p>
+                <p id="gravText"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="controls">
+        <input id="play" type="image" src="play.png" onclick="play()">
+        <div id="bottom">
+            <input type="range" class="slider" id="rot" min="-45" max="45" oninput="updateStats()"
+                onchange="updateStats()">
+            <p id="rotText"></p>
+
+        </div>
+        <input id="stop" type="image" src="stop.png" onclick="resetSimulation()">
+    </div>
+
+    <canvas id="canvas" width="1000px" height="1000px"> </canvas>
+    <script src="script.js"></script>
+
+</body>
+
+</html>`

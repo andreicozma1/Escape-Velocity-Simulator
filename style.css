@@ -1,0 +1,139 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i1.creativecow.net/u/258546/stars.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    overflow: hidden;
+    user-select: none;
+    position:fixed;
+}
+
+#menu {
+    position: absolute;
+    padding: .5em;
+    width: 100%;
+}
+
+#menu #sliders {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu #info div p {
+    display: inline;
+}
+#info{
+    margin-top:.5em;
+}
+input {
+    margin: .5em;
+    margin-bottom: 0;
+}
+
+input[disabled] {
+    opacity: .5;
+    cursor: not-allowed
+}
+
+#color {
+    height: 2.5em;
+    width:6em;
+}
+
+.button {
+    height: 2.5em;
+}
+
+#bottom {
+    width: 30%;
+    padding-top: 1.5em;
+
+}
+
+#bottom input {
+    width: 100%;
+}
+
+#bottom p {
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin: 0;
+    margin-top: .5em;
+}
+
+#controls {
+    position: fixed;
+    bottom: 0;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+#controls * {
+    display: inline-block;
+}
+
+#controls input {
+    margin: 0;
+
+    outline: none;
+}
+
+input:hover:not([disabled]) {
+    opacity: .8;
+}
+
+
+#play {
+    display: inline;
+    float: left;
+    height: 5em;
+}
+
+#stop {
+    display: inline;
+    float: right;
+    padding-right: 2em;
+    height: 5em;
+}
+
+.slider {
+
+    -webkit-appearance: none;
+    height: .75em;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+p {
+    color: white;
+    margin: .5em;
+    font-size:2.2vh;
+
+}
