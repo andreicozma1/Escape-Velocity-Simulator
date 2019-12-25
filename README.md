@@ -1,4 +1,4 @@
-# Escape_Velocity_Simulator
+# Escape Velocity Simulator
 ## About
 - A proof-of-concept project created for my Engineering Fundamentals 152 class.
 - Concepts Learned:   
